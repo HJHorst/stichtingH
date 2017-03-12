@@ -75,7 +75,7 @@ export class AppComponent implements OnInit {
 
   private zipDemo() {
     console.log(JSON.stringify(new Date()));
-    // Observable.timer(500).subscribe(x => console.log(x));
+    Observable.timer(500).subscribe(x => console.log(x));
     let t1 = Observable.interval(5000).take(5);
     let t2 = Observable.interval(2000).take(10);
     // let r1 = Observable.range(0, 3);
